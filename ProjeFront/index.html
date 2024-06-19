@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitirme Projem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="register.html" id="registerLink">Register</a>
+        <div id="userMenu" class="dropdown">
+            <span id="username"></span>
+            <div id="userDropdown" class="dropdown-content">
+                <a href="profile.html">Profile</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <h1>Bitirme Projem </h1>
+    <div id="createPostContainer" class="create-post-container">
+        <h2>Create a Post</h2>
+        <form id="createPostForm">
+            <label for="postTitle">Title:</label>
+            <input type="text" id="postTitle" name="postTitle" required>
+            <label for="postText">Text:</label>
+            <textarea id="postText" name="postText" required></textarea>
+            <button type="submit">Post</button>
+        </form>
+    </div>
+    <div id="postsContainer" class="posts-container"></div>
+    <script src="main.js"></script>
+</body>
+</html>
